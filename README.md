@@ -7,8 +7,6 @@
 
 ---
 
----
-
 ## 🛡️ Legal Disclaimer
 
 > All activities described in this repository were conducted in legal, controlled environments for ethical and educational purposes.  
