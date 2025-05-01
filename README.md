@@ -1,4 +1,11 @@
+## Each lab contains:
+- Recon
+- Exploitation
+- Privilege escalation
+- Flags / post-exploitation
+- Remediation notes (if applicable)
 
+---
 
 ---
 
