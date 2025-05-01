@@ -15,7 +15,7 @@
 - Coming Soon
 
 ### Hack The Box
-- [Chemistry](labs/htb/htb-machine1/README.md)
+- [Chemistry](HackTheBox/Chemistry.md)
 
 ### VulnLab
 - Coming Soon
