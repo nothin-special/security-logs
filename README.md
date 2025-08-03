@@ -37,7 +37,7 @@ Feel free to reach out for collaboration or feedback:
 
 ---
 
-## 🛡️ Legal Disclaimer
+## ⚠️ Legal Disclaimer
 
 > All activities described in this repository were conducted in legal, controlled environments for ethical and educational purposes.  
 > Do **not** attempt to replicate techniques on systems you do not own or have explicit permission to test.
