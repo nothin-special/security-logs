@@ -30,7 +30,7 @@
 
 ## 🚀 Tools Used Frequently
 
-- Nmap, RustScan
+- Nmap
 - Burp Suite, FFUF
 - LinPEAS / WinPEAS
 - BloodHound, Neo4j
@@ -43,8 +43,13 @@
 
 Feel free to reach out for collaboration or feedback:
 
-GitHub: [@nothin-special](https://github.com/nothin-special)
 LinkedIn: [@benjamin-rada-298b2a230](https://www.linkedin.com/in/benjamin-rada-298b2a230/)
+
+Website: [@nothin-special](https://nothin-special.github.io/)
+
+GitHub: [@nothin-special](https://github.com/nothin-special)
+
+
 
 ---
 
