@@ -1,4 +1,4 @@
-## 📌 Index
+## 📌 Navigation
 
 ### Hack The Box
 - [Chemistry](HackTheBox/Chemistry.md)
