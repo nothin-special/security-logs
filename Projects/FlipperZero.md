@@ -1,5 +1,5 @@
 ---
 
-# Flipper Zero Project
+## Flipper Zero Project
 
 ---
