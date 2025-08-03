@@ -4,7 +4,7 @@ Welcome to my cybersecurity archive — a collection of ethical hacking write-up
 
 ---
 
-## 📌 Navigation
+## 🧭 Navigation
 
 ### 🧪 Hack The Box Writeups
 - [Chemistry](HackTheBox/Chemistry.md)
