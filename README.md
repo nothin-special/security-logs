@@ -43,11 +43,9 @@
 
 Feel free to reach out for collaboration or feedback:
 
-LinkedIn: https://www.linkedin.com/in/benjamin-rada-298b2a230
-
-Website: https://nothin-special.github.io
-
-GitHub: [@nothin-special](https://github.com/nothin-special)
+- <a href="https://www.linkedin.com/in/benjamin-rada-298b2a230" target="_blank">LinkedIn</a>  
+- <a href="https://nothin-special.github.io" target="_blank">Portfolio Website</a>  
+- <a href="https://github.com/nothin-special" target="_blank">GitHub @nothin-special</a>
 
 
 
