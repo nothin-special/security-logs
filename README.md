@@ -44,11 +44,6 @@ Feel free to reach out for collaboration or feedback:
 
 ---
 
-# 🛡️ nothin-special | Cybersecurity Portfolio
-
-Welcome to my cybersecurity archive — a collection of ethical hacking write-ups, tools, and research developed through CTF platforms and personal exploration. I'm Ben, a Security Operations Analyst with a passion for red teaming, threat hunting, and malware forensics.
-
----
 
 
 
