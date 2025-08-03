@@ -1,5 +1,3 @@
----
-
 ## Flipper Zero Project
 
 🛠️ Custom Flipper Zero-Compatible RF Board Project
