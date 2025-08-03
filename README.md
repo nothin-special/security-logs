@@ -14,14 +14,14 @@ Welcome to my cybersecurity archive — a collection of ethical hacking write-up
 
 ---
 
-## 🚀 Tools Used Frequently
+## 🛠️ Tools Used Frequently
 
 - Nmap
 - Burp Suite, FFUF
 - LinPEAS / WinPEAS
-- BloodHound, Neo4j
+- BloodHound
 - Metasploit
-- Impacket, CrackMapExec (CME), NetExec
+- NetExec, Impacket
 
 ---
 
