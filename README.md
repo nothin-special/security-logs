@@ -1,3 +1,9 @@
+# 🛡️ nothin-special | Cybersecurity Portfolio
+
+Welcome to my cybersecurity archive — a collection of ethical hacking write-ups, tools, and research developed through CTF platforms and personal exploration. I'm Ben, a Security Operations Analyst with a passion for red teaming, threat hunting, and malware forensics.
+
+---
+
 ## 📌 Navigation
 
 ### Hack The Box
@@ -65,20 +71,6 @@ Welcome to my cybersecurity archive — a collection of ethical hacking write-up
 - Impacket, CrackMapExec (CME), NetExec
 - enum4linux, smbclient, Hydra, Responder
 - gobuster, dirsearch, wfuzz
-
----
-
-## 📊 GitHub Stats
-
-![Ben's GitHub stats](https://github-readme-stats.vercel.app/api?username=nothin-special&show_icons=true&theme=radical)
-![GitHub streak](https://streak-stats.demolab.com?user=nothin-special&theme=radical)
-
----
-
-## 🌍 Community & Recognition
-
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-0077CC?style=flat&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/nothin-special)
-[![Hack The Box](https://img.shields.io/badge/HackTheBox-User-9FEF00?style=flat&logo=hackthebox&logoColor=black)](https://www.hackthebox.com/)
 
 ---
 
