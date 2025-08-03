@@ -63,5 +63,7 @@
 
 - Volatility, Ghidra, x32dbg, PE-bear
 
+---
+
 ### ⚙️ Scripting, Automation, & AI
 - Python, Bash, PowerShell, AutoRecon, Nuclei, Vulnhuntr
