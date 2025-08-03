@@ -8,17 +8,6 @@
 
 ---
 
-## 🚀 Tools Used Frequently
-
-- Nmap
-- Burp Suite, FFUF
-- LinPEAS / WinPEAS
-- BloodHound, Neo4j
-- Metasploit
-- Impacket, CrackMapExec (CME), NetExec
-
----
-
 ## 🛡️ Legal Disclaimer
 
 > All activities described in this repository were conducted in legal, controlled environments for ethical and educational purposes.  
