@@ -43,10 +43,9 @@
 
 Feel free to reach out for collaboration or feedback:
 
-- <a href="https://www.linkedin.com/in/benjamin-rada-298b2a230" target="_blank">LinkedIn</a>  
-- <a href="https://nothin-special.github.io" target="_blank">Website</a>  
-- <a href="https://github.com/nothin-special" target="_blank">GitHub @nothin-special</a>
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/benjamin-rada-298b2a230)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/nothin-special)
+[![Website](https://img.shields.io/badge/Website-000000?style=flat&logo=About.me&logoColor=white)](https://nothin-special.github.io)
 
 
 ---
