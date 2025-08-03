@@ -1,13 +1,10 @@
-## 📌 Index of Write-Ups
-
-### TryHackMe
-- Coming Soon
+## 📌 Index
 
 ### Hack The Box
 - [Chemistry](HackTheBox/Chemistry.md)
 
-### VulnLab
-- Coming Soon
+### Projects
+- [Flipper Zero](Projects/FlipperZero.md)
 
 ---
 
