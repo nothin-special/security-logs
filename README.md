@@ -43,7 +43,8 @@
 
 Feel free to reach out for collaboration or feedback:
 
-GitHub: [@nothin-special](github.com/nothin-special)
+GitHub: [@nothin-special](https://github.com/nothin-special)
+LinkedIn: [@benjamin-rada-298b2a230](https://www.linkedin.com/in/benjamin-rada-298b2a230/)
 
 ---
 
