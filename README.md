@@ -8,6 +8,17 @@
 
 ---
 
+## 🚀 Tools Used Frequently
+
+- Nmap
+- Burp Suite, FFUF
+- LinPEAS / WinPEAS
+- BloodHound, Neo4j
+- Metasploit
+- Impacket, CrackMapExec (CME), NetExec
+
+---
+
 ## 🛡️ Legal Disclaimer
 
 > All activities described in this repository were conducted in legal, controlled environments for ethical and educational purposes.  
@@ -24,7 +35,6 @@ Feel free to reach out for collaboration or feedback:
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/nothin-special)
 
 [![Website](https://img.shields.io/badge/Website-000000?style=flat&logo=About.me&logoColor=white)](https://nothin-special.github.io)
-
 
 ---
 
