@@ -8,7 +8,7 @@ PWNED: 11/16/2024
 #### NMAP
 ##### **Command:** sudo nmap -sC -sV 10.10.11.38  
 
-![chemistry_main](https://github.com/user-attachments/assets/97d01109-babc-4592-8952-d9dee72ac6c7)
+![chemistry_main](./images/chemistry_main.png)
 
 
 ##### As with all boxes, the first command that is run is 'nmap'. Of the ports that were open, port 5000 seems the most promising as it is likely a webpage that we can exploit.
