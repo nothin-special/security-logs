@@ -128,7 +128,7 @@ PWNED: 11/16/2024
 
 ##### The web server appears to be using aiohttp/3.9.1, which is great as we can search to see if it's exploitable.
 
-![aiohttp google exploit](aiohttp_google_exploit.png)
+![aiohttp google exploit](./images/aiohttp_google_exploit.png)
 
 ##### Doing a quick google search shows that it's exploitable to CVE-2024-23334, which is a path traversal vulnerability. This can be used to print /etc/shadow, where the root password can be broken, or if you're lazy (but I like to say more efficient since the goal of a CTF is to get the flag), simply print /root/root.txt to show the root flag. 
 
