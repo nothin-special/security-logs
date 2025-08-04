@@ -78,15 +78,15 @@ PWNED: 11/16/2024
 <br>
 
 #### Breaking the Hash
-![hash identifier](./images/hash identifier.png)
+![hash identifier](./images/hash_identifier.png)
 
 ##### I used 'hashes.com/en/tools/hash_identifier' to identify the type of hash that is used for the password encryption. In this case, it's MD5 which is not secure and can easily be broken.
 
-![hashcat break md5](https://github.com/user-attachments/assets/acaebdac-3fa6-4ff8-89a6-7e79f31c9d1e)
+![hashcat break md5](./images/hashcat_break_md5.png)
 
 <br>
 
-![password cracked](https://github.com/user-attachments/assets/a300641e-de27-41fc-80dd-bf23eb17b080)
+![password cracked](./images/password_cracked.png)
 
 <br>
 
@@ -95,48 +95,48 @@ PWNED: 11/16/2024
 <br>
 
 #### Privilege Escalation
-![rosa_ssh_session](https://github.com/user-attachments/assets/86108009-d9ae-4a1b-9441-85642860b47d)
+![rosa_ssh_session](./images/rosa_ssh_session.png)
 
 ##### Now that we have Rosa's credentials, I SSH'd into the machine as 'rosa' and prepared to escalate my privileges to 'root'. I went ahead and copied the user.txt file from the user's home directory.
 
-![sudo-l](https://github.com/user-attachments/assets/e0d29b76-ed7c-4d8b-81e3-8e098edf63d7)
+![sudo-l](./images/sudo-l.png)
 
 ##### I ran some basic commands using my cheat sheet that I created for linux privilege escalation. The most basic being 'sudo -l', and as you can see, we cannot run anything as sudo as the rosa user. 
-![netstat command](https://github.com/user-attachments/assets/2f6d5969-18fc-4917-b170-81448f0dfce9)
+![netstat command](./images/netstat_command.png)
 
 ##### Upon running netstat to view the open ports on the machine, port 8080 is also opened on localhost. This is a common port used for alternative web services like proxies, development, and other applications. I decided to use 'chisel' to get a better view and to see if there's anything I could exploit. 
 
-![python3 server](https://github.com/user-attachments/assets/f2c9992d-c7ee-4325-b004-d49ec15c4f24)
+![python3 server](./images/python3_server.png)
 
 ##### To get the chisel client on the victim machine, I used a python3 server and wget to grab my chisel file in the /tmp/ directory on the victim machine. 
 
-![chisel client command](https://github.com/user-attachments/assets/1d9c95a0-08d1-4071-9aea-c88c0a53e952)
+![chisel client command](./images/chisel_client_command.png)
 
 ##### This shows the command that I used to initate a chisel client on the victim machine.
-![chisel server command](https://github.com/user-attachments/assets/2f563c34-5134-4c01-8202-c2ba11cf3a1f)
+![chisel server command](./images/chisel_server_command.png)
 
 ##### This shows the command that I used to initate a chisel server on my attacking machine. 
-![homepage of chisel server](https://github.com/user-attachments/assets/fef74199-745d-4c26-8dda-6d756c11b9cd)
+![homepage of chisel server](./images/homepage_of_chisel_server.png)
 
 <br>
 
-![servicelist](https://github.com/user-attachments/assets/d0b738c0-2e64-428b-8b71-d582e2275e7e)
+![servicelist](./images/servicelist.png)
 
 ##### Going to localhost on port 8080 now shows what the webpage of the alternative web server is hosting on the victim's machine. Not a whole lot was found here, but I did go through the services and the source code to see if there was anything interesting. I attempted to use my wappalyzer extension and I ran scanning tools, like nuclei and nmap on the web service. I also used gobuster to see if there were any other hidden/interesting directories.
 
-![nmap of aiohttp](https://github.com/user-attachments/assets/ac4d8294-06be-4c98-a72f-617bc81ee410)
+![nmap of aiohttp](./images/nmap_of_aiohttp.png)
 
 ##### The web server appears to be using aiohttp/3.9.1, which is great as we can search to see if it's exploitable.
 
-![aiohttp google exploit](https://github.com/user-attachments/assets/1650e400-e6a4-4439-a9da-5f94fd96cf09)
+![aiohttp google exploit](aiohttp_google_exploit.png)
 
 ##### Doing a quick google search shows that it's exploitable to CVE-2024-23334, which is a path traversal vulnerability. This can be used to print /etc/shadow, where the root password can be broken, or if you're lazy (but I like to say more efficient since the goal of a CTF is to get the flag), simply print /root/root.txt to show the root flag. 
 
-![urlencoded etcpasswd](https://github.com/user-attachments/assets/06198a58-112e-43ec-b21d-7619770e23b4)
+![urlencoded etcpasswd](./images/urlencoded_etcpasswd.png)
 
 ##### As you can see, if I run a url encoded path traversal curl command, it shows the contents of /etc/passwd (this has the ability to print any file as root). Note that this only works with the /assets/ directory (or at least I couldn't get it to work otherwise), which was found during the gobuster directory brute force which showed as a 403. 
 
-![roottxtfile](https://github.com/user-attachments/assets/8f41adc2-3798-43b0-a556-3a0ec9ff7e28)
+![roottxtfile](./images/roottxtfile.png)
 
 ##### Nice! We printed root.txt by using the path traversal vulnerability!
 
