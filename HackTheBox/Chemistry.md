@@ -32,7 +32,7 @@ PWNED: 11/16/2024
 
 #### Exploit POC
 
-![CIF_Exploit](./images/CIF_Exploit.pnmg)
+![CIF_Exploit](./images/CIF_Exploit.png)
 
 
 ##### Upon searching exploits related to CIF files, the first results show an arbitrary code exection POC.
