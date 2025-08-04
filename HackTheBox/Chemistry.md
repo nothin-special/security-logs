@@ -16,7 +16,7 @@ PWNED: 11/16/2024
 
 #### Dashboard
 
-![CIF_Uploaded](https://github.com/user-attachments/assets/b0137b84-fc8b-4ada-a04c-7ca2dc58ac11)
+![CIF_Uploaded](./images/CIF_Uploaded.png)
 
 
 ##### Upon opening the webpage in Firefox, a dashboard appears to take '.cif' files. This upload feature may be exploitable and needs to be looked at further to confirm this suspicion. For testing, I uploaded a test.cif file to ensure that the website is functioning properly before attempting to exploit it.
@@ -24,7 +24,7 @@ PWNED: 11/16/2024
 
 #### Test CIF Uploaded
 
-![CIF_Opened](https://github.com/user-attachments/assets/5d514fb1-1def-4a8f-9847-cc3891978658)
+![CIF_Opened](./images/CIF_Opened.png)
 
 
 ##### This appears to be working properly as our test CIF with fake data was successfully opened.
@@ -32,13 +32,13 @@ PWNED: 11/16/2024
 
 #### Exploit POC
 
-![CIF_Exploit](https://github.com/user-attachments/assets/1af8008c-988e-4e99-9d23-8f287cfc423c)
+![CIF_Exploit](./images/CIF_Exploit.pnmg)
 
 
 ##### Upon searching exploits related to CIF files, the first results show an arbitrary code exection POC.
 <br>
 
-![github](https://github.com/user-attachments/assets/9a32a7f9-c426-4357-bf10-b2f489c60394)
+![github](./images/github.png)
 
 
 ##### This Github shows a POC file that we can use to gain a reverse shell from the upload feature, by replacing 'touch pwned' with the reverse shell command.
@@ -46,7 +46,7 @@ PWNED: 11/16/2024
 
 #### File Creation
 
-![vuln_cif_file](https://github.com/user-attachments/assets/3346feab-e5a9-482e-8ed3-a601bf60946b)
+![vuln_cif_file](./images/vuln_cif_file.png)
 
 
 ##### My go-to for creating reverse shells is revshells.com. In this case, I went with an interactive bash shell since this is a Linux box. Initially, my shell would not work, but with some trial and error, the following is what I came up with: 
@@ -57,11 +57,11 @@ PWNED: 11/16/2024
 
 #### Exploit
 
-![vuln_cif_view](https://github.com/user-attachments/assets/66d4caa1-6ea0-48d0-a808-f5a35cf09149)
+![vuln_cif_view](./images/vuln_cif_view.png)
 
 ##### After crafting the payload, the reverse shell was created by uploading the malicious CIF file and clicking the 'View' button to run the file on the victim machine. This was caught by a Netcat listener on my machine on port 4444 gaining us access to the system as the 'app' user.
 
-![revshell_completed](https://github.com/user-attachments/assets/75cc6f06-955f-490a-a7ef-be793a1e0845)
+![revshell_completed](./images/revshell_completed.png)
 
 <br>
 <br>
@@ -72,13 +72,13 @@ PWNED: 11/16/2024
 
 #### Interesting Database File
 
-![database_file_hash](https://github.com/user-attachments/assets/981e9fb9-5f53-4232-b5cb-fef438366b70)
+![database_file_hash](./images/database_file_hash.png)
 
 ##### I came accross a .db file which contained various users and hashes. There were a few users and hashes, but the one that ended up being of use was 'rosa'. 
 <br>
 
 #### Breaking the Hash
-![hash identifier](https://github.com/user-attachments/assets/7ce80268-1079-4ff0-ab39-fdfb780dfa12)
+![hash identifier](./images/hash identifier.png)
 
 ##### I used 'hashes.com/en/tools/hash_identifier' to identify the type of hash that is used for the password encryption. In this case, it's MD5 which is not secure and can easily be broken.
 
