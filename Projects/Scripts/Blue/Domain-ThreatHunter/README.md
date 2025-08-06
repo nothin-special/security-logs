@@ -29,9 +29,13 @@
 ## ⚙️ Setup (Using Virtual Environment)
 
 ```bash
-# Clone the repo
-git clone https://github.com/yourusername/Domain-ThreatHunter.git
-cd Domain-ThreatHunter
+# Clone the Repo
+# With curl
+curl -O https://raw.githubusercontent.com/nothin-special/security-logs/main/Projects/Scripts/Blue/Domain-ThreatHunter/domain_threathunter.py
+
+# Or with wget
+wget https://raw.githubusercontent.com/nothin-special/security-logs/main/Projects/Scripts/Blue/Domain-ThreatHunter/domain_threathunter.py
+
 
 # Create and activate virtual environment
 python3 -m venv venv
