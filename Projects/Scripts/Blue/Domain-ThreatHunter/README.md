@@ -45,5 +45,9 @@ source venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 
+# Insert your VirusTotal API key
+# (Open the script and replace the placeholder value with your VT API key)
+api_key = "your_api_key_here"
+
 # Usage
 python3 domain_threathunter.py <domain>
