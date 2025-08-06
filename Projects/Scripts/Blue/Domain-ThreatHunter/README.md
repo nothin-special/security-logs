@@ -29,7 +29,7 @@
 ## ⚙️ Setup (Using Virtual Environment)
 
 ```bash
-# Clone domain_threathunter.py
+# Clone domain_threathunter.py & requirements.txt
 # With curl
 curl -O https://raw.githubusercontent.com/nothin-special/security-logs/main/Projects/Scripts/Blue/Domain-ThreatHunter/domain_threathunter.py && \
 curl -O https://raw.githubusercontent.com/nothin-special/security-logs/main/Projects/Scripts/Blue/Domain-ThreatHunter/requirements.txt
