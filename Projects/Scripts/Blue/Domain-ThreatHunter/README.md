@@ -46,7 +46,7 @@ python3 domain_threathunter.py <domain>
 ## 🖼️ Example Output
 
 > - WHOIS
-
+![whois](./images/whois.png)
 
 > - DNS records
 
