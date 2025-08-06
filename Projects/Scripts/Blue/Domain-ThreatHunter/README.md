@@ -44,3 +44,6 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Usage
+python3 domain_threathunter.py <domain>
