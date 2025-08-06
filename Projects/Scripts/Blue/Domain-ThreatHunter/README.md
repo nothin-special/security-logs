@@ -45,18 +45,18 @@ python3 domain_threathunter.py <domain>
 
 ## 🖼️ Example Output
 
-> - WHOIS
+> - #### WHOIS
 ![whois](./images/whois.png)
 
-> - DNS records
+> - #### DNS records
+![DNS](./images/DNS-info.png)
 
+> - #### SSL cert info  
+![SSL-TLS](./images/SSL-TLS.png)
 
-> - SSL cert info  
+> - #### VirusTotal result  
+![virustotal](./images/virustotal.png)
 
-
-> - VirusTotal result  
-
-
-> - Subdomain Findings
-
+> - #### Subdomain Findings
+![subdomain](./images/subdomain.png)
 
