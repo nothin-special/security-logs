@@ -31,11 +31,12 @@
 ```bash
 # Clone domain_threathunter.py
 # With curl
-curl -O https://raw.githubusercontent.com/nothin-special/security-logs/main/Projects/Scripts/Blue/Domain-ThreatHunter/domain_threathunter.py
+curl -O https://raw.githubusercontent.com/nothin-special/security-logs/main/Projects/Scripts/Blue/Domain-ThreatHunter/domain_threathunter.py && \
+curl -O https://raw.githubusercontent.com/nothin-special/security-logs/main/Projects/Scripts/Blue/Domain-ThreatHunter/requirements.txt
 
 # Or with wget
-wget https://raw.githubusercontent.com/nothin-special/security-logs/main/Projects/Scripts/Blue/Domain-ThreatHunter/domain_threathunter.py
-
+wget https://raw.githubusercontent.com/nothin-special/security-logs/main/Projects/Scripts/Blue/Domain-ThreatHunter/domain_threathunter.py && \
+wget https://raw.githubusercontent.com/nothin-special/security-logs/main/Projects/Scripts/Blue/Domain-ThreatHunter/requirements.txt
 
 # Create and activate virtual environment
 python3 -m venv venv
