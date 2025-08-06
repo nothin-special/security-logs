@@ -1,6 +1,6 @@
 # Domain-ThreatHunter
 
-**Domain-ThreatHunter** is a Python-based reconnaissance tool that gathers passive intelligence on a target domain using WHOIS, DNS, SSL/TLS info, subdomain enumeration, ASN lookups, and reputation checks from VirusTotal.
+**Domain-ThreatHunter** is a Python-based reconnaissance tool that gathers **passive** intelligence on a target domain using WHOIS, DNS, SSL/TLS info, subdomain enumeration, ASN lookups, and reputation checks from VirusTotal.
 
 ## 🧰 Features
 
