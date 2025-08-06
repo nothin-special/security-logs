@@ -251,7 +251,7 @@ def domain_analysis(domain):
 if __name__ == "__main__":
     import sys
     if len(sys.argv) != 2:
-        print("Usage: python3 script.py <domain>")
+        print("Usage: python3 domain_threathunter.py <domain>")
     else:
         domain = sys.argv[1]
         domain_analysis(domain)
