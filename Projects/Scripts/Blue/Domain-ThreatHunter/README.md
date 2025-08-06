@@ -40,7 +40,7 @@ api_key = "your_api_key_here"
 
 # Usage
 python3 domain_threathunter.py <domain>
-
+```
 ---
 
 ## 🖼️ Example Output
