@@ -1,0 +1,6 @@
+requests
+dnspython
+python-whois
+shodan
+virustotal-python
+ipwhois
