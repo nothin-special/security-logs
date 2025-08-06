@@ -135,11 +135,11 @@ def asn_lookup(ip_address):
         print(f"Error performing ASN lookup for {ip_address}: {e}")
         return None
 
-# VirusTotal Check (final fixed version)
+# VirusTotal Check
 def check_virustotal(url):
     import base64
     try:
-        api_key = "REMOVED"
+        api_key = "your_api_key_here"
 
         # Encode the URL to base64 ID format (VT requirement)
         url_id = base64.urlsafe_b64encode(url.encode()).decode().strip("=")
