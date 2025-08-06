@@ -15,25 +15,6 @@
 
 ---
 
-## 🖼️ Example Output
-
-> - WHOIS
-<img width="942" height="360" alt="image" src="https://github.com/user-attachments/assets/d1649cf2-f8d1-43e9-80c1-533b99bdc4f8" />
-
-> - DNS records
-<img width="953" height="122" alt="image" src="https://github.com/user-attachments/assets/20054a6d-8980-445b-a388-91a89be08d95" />
-
-> - SSL cert info  
-<img width="774" height="144" alt="image" src="https://github.com/user-attachments/assets/c84b3b4e-fd35-4c9e-badb-2b1ea13d4f24" />
-
-> - VirusTotal result  
-<img width="711" height="149" alt="image" src="https://github.com/user-attachments/assets/a29e4c8c-cf27-4bc2-8bd3-11a3ff066050" />
-
-> - Subdomain Findings
-<img width="530" height="124" alt="image" src="https://github.com/user-attachments/assets/39ee5cdb-c9c9-4968-a72d-5ddd864a5046" />
-
----
-
 ## ⚙️ Setup (Using Virtual Environment)
 
 ```bash
@@ -59,3 +40,24 @@ api_key = "your_api_key_here"
 
 # Usage
 python3 domain_threathunter.py <domain>
+
+---
+
+## 🖼️ Example Output
+
+> - WHOIS
+<img width="942" height="360" alt="image" src="https://github.com/user-attachments/assets/d1649cf2-f8d1-43e9-80c1-533b99bdc4f8" />
+
+> - DNS records
+<img width="953" height="122" alt="image" src="https://github.com/user-attachments/assets/20054a6d-8980-445b-a388-91a89be08d95" />
+
+> - SSL cert info  
+<img width="774" height="144" alt="image" src="https://github.com/user-attachments/assets/c84b3b4e-fd35-4c9e-badb-2b1ea13d4f24" />
+
+> - VirusTotal result  
+<img width="711" height="149" alt="image" src="https://github.com/user-attachments/assets/a29e4c8c-cf27-4bc2-8bd3-11a3ff066050" />
+
+> - Subdomain Findings
+<img width="530" height="124" alt="image" src="https://github.com/user-attachments/assets/39ee5cdb-c9c9-4968-a72d-5ddd864a5046" />
+
+
