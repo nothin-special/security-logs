@@ -1,6 +1,6 @@
 # Code HTB Easy Linux Machine
 <div align="center">
-  <img src="./images/nmap.png" alt="nmap" />
+  <img src="./images/code.png" alt="nmap" />
 </div>
 
 Started: 5/8/25
