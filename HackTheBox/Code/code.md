@@ -51,7 +51,7 @@ backy.sh
 
 ![task](./images/task.png)  
 
-bypasses the filter since it removes ../ but will leave ../ for path traversal. Since it's running as sudo it will successfully grab the files  
+bypasses the filter since it removes ../ but will leave ../ for path traversal. Since it's running as sudo it will successfully backup the root directory files.  
 
 ![exploit](./images/exploit.png)  
 
