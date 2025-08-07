@@ -57,4 +57,4 @@ We can bypass the filter since it removes ../ but will leave ../ when inputting 
 
 ![loot](./images/loot.png)  
 
-We grabbed the flag but we can also grab the ssh private key of root and log into the system as root if we wanted.
+I already grabbed the flag but we can also grab the ssh private key of root and log into the system as root.
