@@ -1,3 +1,7 @@
+# HackTheBox Writeups
+![Code](https://github.com/nothin-special/security-logs/blob/main/HackTheBox/Code/code.md)
+![Chemistry](https://github.com/nothin-special/security-logs/blob/main/HackTheBox/Chemistry/Chemistry.md)
+
 ## 📂 Each Lab Contains
 - 📝 Summary – Overview of the lab and its objectives
 - 🔍 Recon – Scanning and enumeration techniques used
