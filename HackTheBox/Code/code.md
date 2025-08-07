@@ -32,10 +32,10 @@ Command: nc -lvnp 4444
 
 ![userflag](./images/userflag.png)  
 
-database.db  
+Found database.db file on the machine
 ![database](./images/database.png)  
 
-crackstation  
+Exported the hash and input it into CrackStation  
 ![crackstation](./images/crackstation.png)  
 
 development:development  
