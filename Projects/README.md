@@ -14,6 +14,11 @@ This directory contains independent research, tools, writeups, and explorations 
 ## ⚙️ Local Tools & Scripts
 > Custom scripts and helpers developed for enumeration, privilege escalation, and automation.
 
+#### Blue Team Scripts
+
+https://github.com/nothin-special/security-logs/tree/main/Projects/Scripts/Blue/Domain-ThreatHunter
+
+#### Red Team Scripts
 _(Coming soon)_
 
 ---
