@@ -1,7 +1,9 @@
+# Code HTB Easy Linux Machine
 ![code](./images/code.png)
 Started: 5/8/25  
 Pwned: 5/8/25  
 
+## Nmap Output
 ![nmap](./images/nmap.png)  
 
 popen was blocked  
