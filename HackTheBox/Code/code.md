@@ -1,8 +1,10 @@
 # Code HTB Easy Linux Machine
-![code](./images/code.png)
+<div align="center">
+  <img src="./images/nmap.png" alt="nmap" />
+</div>
 
-Started: 5/8/25  
-Pwned: 5/8/25  
+Started: 5/8/25
+Pwned: 5/8/25
 
 ## Nmap Output
 ![nmap](./images/nmap.png)  
