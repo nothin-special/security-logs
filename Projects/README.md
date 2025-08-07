@@ -16,7 +16,7 @@ This directory contains independent research, tools, writeups, and explorations 
 
 #### Blue Team Scripts
 
-https://github.com/nothin-special/security-logs/tree/main/Projects/Scripts/Blue/Domain-ThreatHunter
+[Domain-ThreatHunter](https://github.com/nothin-special/security-logs/tree/main/Projects/Scripts/Blue/Domain-ThreatHunter)
 
 #### Red Team Scripts
 _(Coming soon)_
