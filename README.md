@@ -20,6 +20,7 @@ Welcome to my cybersecurity archive — a collection of ethical hacking write-up
 - BloodHound
 - Metasploit
 - NetExec, Impacket
+- [And More!](https://github.com/nothin-special/security-logs/tree/main/HackTheBox#-tools-i-use-frequently)
 
 ---
 
