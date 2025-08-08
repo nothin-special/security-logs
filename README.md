@@ -6,8 +6,7 @@ Welcome to my cybersecurity archive — a collection of ethical hacking write-up
 
 ## 🧭 Navigation
 
-### 🧪 Hack The Box Writeups
-- [Click to Read More!]([HackTheBox/Chemistry.md](https://github.com/nothin-special/security-logs/tree/main/HackTheBox))
+### [🧪 Hack The Box Writeups]([HackTheBox/Chemistry.md](https://github.com/nothin-special/security-logs/tree/main/HackTheBox))
 
 ### 🧰 Projects
 - [Flipper Zero](Projects/FlipperZero.md)
