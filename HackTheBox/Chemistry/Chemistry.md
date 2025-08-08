@@ -1,5 +1,3 @@
-Author: nothin-special 
-<br>
 PWNED: 11/16/2024
 
 <!-- USER -->
