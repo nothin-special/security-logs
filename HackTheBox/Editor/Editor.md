@@ -3,7 +3,7 @@
 
 Pwned: 09/10/25
 
-![](HackTheBox/Editor/root.png)
+![](root.png)
 
 Walkthrough Coming Soon!
 
