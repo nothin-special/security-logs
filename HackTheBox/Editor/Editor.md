@@ -1,8 +1,8 @@
 
-![[title.png]]
+![](title.png)
 Pwned: 09/10/25
 
-![[HackTheBox/Editor/root.png]]
+![](HackTheBox/Editor/root.png)
 
 Walkthrough Coming Soon!
 
