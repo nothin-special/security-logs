@@ -3,6 +3,8 @@
 ## Windows - Medium
 [Puppy](https://github.com/nothin-special/security-logs/blob/main/HackTheBox/Puppy/puppy.md)
 
+[Voleur]()
+
 ## Linux - Easy
 [Code](https://github.com/nothin-special/security-logs/blob/main/HackTheBox/Code/code.md)
 
