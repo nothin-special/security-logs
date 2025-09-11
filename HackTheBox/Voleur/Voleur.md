@@ -4,3 +4,6 @@ Started: 8/9/25
 
 Pwned: 9/11/25
 
+Walkthrough Coming Soon!
+
+Per HTB's guidelines, a walkthrough will be released upon the box's retirement.
