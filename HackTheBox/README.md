@@ -5,6 +5,9 @@
 
 [Voleur]()
 
+## Linux - Medium
+[Previous](https://github.com/nothin-special/security-logs/blob/main/HackTheBox/Previous/Previous.md)
+
 ## Linux - Easy
 [Code](https://github.com/nothin-special/security-logs/blob/main/HackTheBox/Code/code.md)
 
