@@ -1,7 +1,7 @@
 # HackTheBox Writeups
 
 ## Windows - Medium
-[Puppy](https://github.com/nothin-special/security-logs/blob/main/HackTheBox/Puppy/puppy.md)
+[Puppy](https://github.com/nothin-special/security-logs/blob/main/HackTheBox/Puppy/README.md)
 
 [Voleur](https://github.com/nothin-special/security-logs/blob/main/HackTheBox/Voleur/Voleur.md)
 
