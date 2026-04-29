@@ -15,6 +15,8 @@
 
 [Editor](https://github.com/nothin-special/security-logs/blob/main/HackTheBox/Editor/Editor.md)
 
+[Facts](https://github.com/nothin-special/security-logs/blob/main/HackTheBox/Facts/Facts.md)
+
 ## 📂 Each Lab Contains
 - 📝 Summary – Overview of the lab and its objectives
 - 🔍 Recon – Scanning and enumeration techniques used
