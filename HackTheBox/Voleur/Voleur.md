@@ -68,88 +68,88 @@ Host script results:
 ##### Enumeration
 After trying some commands, I kept getting failures with the given credentials. The error in the screenshot below shows that Kerberos authentication must be used instead of NTLM.
 
-![](20250809100923.png)
+![](./Images/20250809100923.png)
 
 I wanted to grab the ticket cache file for my user to authenticate via Kerberos to the services on the machine as they require this rather than a username/password. Here we get the clock error indicating we must set our time.
 
-![](20250809181212.png)
+![](./Images/20250809181212.png)
 
 
-![](20250809181219.png)
+![](./Images/20250809181219.png)
 
 After I set the time, I re-ran the impacket-getTGT command to get the ticket cache file for our user. This TGT cache file will be used to authenticate to Kerberos-protected services on the box.
 
-![](20250809181228.png)
+![](./Images/20250809181228.png)
 
 The guide I followed to do this:
 - https://notes.benheater.com/books/active-directory/page/kerberos-authentication-from-kali
 
 Edited the /etc/hosts file
 
-![](20250809185549.png)
+![](./Images/20250809185549.png)
 
 Creating custom krb5.conf
 
-![](20250809185651.png)
+![](./Images/20250809185651.png)
 
 Now we can run the klist command to view the details and verify TGT is present and not expired.
 
-![](20250809183211.png)
+![](./Images/20250809183211.png)
 
 Next, I set the environment variables to my files. I did grab a new TGT cache file to ensure it was still valid as the box may have been reset while I was troubleshooting. I then ran the smb command and we now have access to the shares on the machine. The IT share sticks out to me so I'm going to check that first.
 
-![](20250809191010.png)
+![](./Images/20250809191010.png)
 
 Using impacket's smbclient, we could authentiate using Kerberos and view the IT share that we discovered. Now let's look at the file we grabbed.
 
-![](20250809194848.png)
+![](./Images/20250809194848.png)
 
 Doing some user enumeration with ldap search
 
-![](20250809191754.png)
+![](./Images/20250809191754.png)
 
 
 The file is password protected. Let's see if we can crack it as the password we have currently did not work.
 
-![](20250809195404.png)
+![](./Images/20250809195404.png)
 
 Now we can take that hash and crack it with john using rockyou wordlist.
 
-![](20250809195539.png)
+![](./Images/20250809195539.png)
 
 We easily cracked the password in 2 seconds. Now we can open it and likely get further credentials or information to exploit the machine.
 
-![](20250809200202.png)
+![](./Images/20250809200202.png)
 
 Opening the file, we now have some new passwords to try for service accounts.
 
-![[20250809200413.png]]
+![](./Images/20250809200413.png)
 
 Now we can password spray.
 
-![[20250809200757.png]]
+![](./Images/20250809200757.png)
 
 We found out that these two passwords are working on both service accounts. The other password did not work, but we will save that for later to try.
-![[20250809201924.png]]
+![](./Images/20250809201924.png)
 
 Now we can get out TGT cache files for the two accounts to try out some more enumeration. Let's do bloodhound-python using the two accounts and import all the data into bloodhound.
 
-![[20250809202736.png]]
+![](./Images/20250809202736.png)
 
-![[20250809202858.png]]
+![](./Images/20250809202858.png)
 
 We can see that svc_ldap account has some privileges that we can abuse using WriteSPN to kerberoast that user's hash to attempt to crack it offline.
 
-![[20250809203957.png]]
+![](./Images/20250809203957.png)
 
 
 You can see we got no entries found when performing getuserspns command. Let's try to manually add an SPN and see that works.
 
-![[Pasted image 20250814164019.png]]
+![](./Images/20250814164019.png)
 
 First created an ldif file which will give the ldap server instructions to modify the svc_winrm account to give it a SPN.
 
-![[Pasted image 20250814164053.png]]
+![](./Images/20250814164053.png)
 
 Next we can run our LDAP modify and re-run our getuserspn command, and now we have a hash to attempt to crack.
 
@@ -157,52 +157,52 @@ Next we can run our LDAP modify and re-run our getuserspn command, and now we ha
 
 Nice! We were able to crack the hash offline using hashcat and now have win_rm access since it's in the remote management users group.
 
-![[Pasted image 20250814164341.png]]
+![](./Images/20250814164341.png)
 
 I created another ldif file and changed the spn to servicePrincipalName: HTTP/dc.voleur.htb to make it easier to connect via winrm since that was giving me trouble connecting from HTTP/fakesvc SPN. Now we are on the box and can get user.txt.
 
-![[Pasted image 20250814171912.png]]
+![](./Images/20250814171912.png)
 
 Going back a bit, we can see a user - Todd.Wolfe which has been deleted. Let's restore his account using svc_ldap as this user is a part of the restore_users group.
 
-![[20250809200413.png]]
+![](./Images/20250809200413.png)
 
 
 https://adminions.ca/books/active-directory-enumeration-and-exploitation/page/bloodyad
 Once restored, we can see what they have access to in the SMB shares.
 
-![[Pasted image 20250827165030.png]]
+![](./Images/20250827165030.png)
 
 Looking at the backup of the user, we found that they had creds stored which we can decrypt by grabbing the two files and saving the SID.
 
-![[Pasted image 20250827165355.png]]
+![](./Images/20250827165355.png)
 
 We successfully stole jeremy.combs password.
 
-![[Pasted image 20250827165628.png]]
+![](./Images/20250827165628.png)
 
 Generating jeremy.combs ticket granting ticket ccache and using impacket-smbclient again, we were able to see the Third-Line Support folder which contained an SSH key for a WSL VM.
 
-![[Pasted image 20250911161139.png]]
+![](./Images/20250911161139.png)
 
 Based on the output below, I suspect that this key belongs to svc_backup. Looking back at the nmap scan we did, port 2222 is open for SSH. Let's try to login and see what we can find.
 
-![[Pasted image 20250911161359.png]]
+![](./Images/20250911161359.png)
 
-![[Pasted image 20250911161521.png]]
+![](./Images/20250911161521.png)
 
 We found a new Backups folder which contains ntds.dit and the SYSTEM Hive which we can download to our system and use secrets dump to crack the password.
 
-![[Pasted image 20250911161706.png]]
+![](./Images/20250911161706.png)
 
-![[Pasted image 20250911162212.png]]
+![](./Images/20250911162212.png)
 
-![[Pasted image 20250911162218.png]]
+![](./Images/20250911162218.png)
 
-![[Pasted image 20250911162331.png]]
+![](./Images/20250911162331.png)
 
 Now we can use the hash of Administrator to generate a TGT and login to print the root flag.
 
-![[Pasted image 20250911162904.png]]
+![](./Images/20250911162904.png)
 
-![[Pasted image 20250911162831.png]]
+![](./Images/20250911162831.png)
