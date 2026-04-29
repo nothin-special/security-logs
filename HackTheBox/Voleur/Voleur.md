@@ -3,7 +3,7 @@ Started: 8/9/25
 Pwned: 9/11/25
 
 
-![](20250809093926.png)
+![](./Images/20250809093926.png)
 ### Summary: 
 This is a medium windows box that involves AD exploitation and ...
 
