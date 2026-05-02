@@ -3,9 +3,6 @@ Started: 8/9/25
 Pwned: 9/11/25
 
 ![](./Images/20250809093926.png)
-### Summary: 
-This is a medium windows box that involves AD exploitation and ...
-
 
 Provided Credentials: ryan.naylor / HollowOct31Nyt
 
